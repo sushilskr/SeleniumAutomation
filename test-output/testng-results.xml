@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-06T16:33:43 IST" name="Suite" finished-at="2023-01-06T16:34:11 IST" duration-ms="27716">
+    <groups>
+      <group name="Purchase">
+        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:mavenproject.SubmitOrderTest@5be49b60]" name="submitOrder" class="mavenproject.SubmitOrderTest"/>
+      </group> <!-- Purchase -->
+    </groups>
+    <test started-at="2023-01-06T16:33:43 IST" name="Error Validation Test" finished-at="2023-01-06T16:33:57 IST" duration-ms="14154">
+      <class name="mavenproject.ErrorValidations">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:mavenproject.ErrorValidations@ae3540e]" started-at="2023-01-06T16:33:43 IST" name="launchApplication" finished-at="2023-01-06T16:33:50 IST" duration-ms="6075" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginErrorValidations()[pri:0, instance:mavenproject.ErrorValidations@ae3540e]" started-at="2023-01-06T16:33:50 IST" name="loginErrorValidations" finished-at="2023-01-06T16:33:51 IST" duration-ms="1130" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Incorrect email or password.] but found [Incorrect email@ or password.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect email@ or password.]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at mavenproject.ErrorValidations.loginErrorValidations(ErrorValidations.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginErrorValidations -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:mavenproject.ErrorValidations@ae3540e]" started-at="2023-01-06T16:33:51 IST" name="tearDown" finished-at="2023-01-06T16:33:51 IST" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:mavenproject.ErrorValidations@ae3540e]" started-at="2023-01-06T16:33:51 IST" name="launchApplication" finished-at="2023-01-06T16:33:54 IST" duration-ms="2998" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrderValidation()[pri:0, instance:mavenproject.ErrorValidations@ae3540e]" started-at="2023-01-06T16:33:54 IST" name="submitOrderValidation" finished-at="2023-01-06T16:33:57 IST" duration-ms="3055" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrderValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:mavenproject.ErrorValidations@ae3540e]" started-at="2023-01-06T16:33:57 IST" name="tearDown" finished-at="2023-01-06T16:33:57 IST" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- mavenproject.ErrorValidations -->
+    </test> <!-- Error Validation Test -->
+    <test started-at="2023-01-06T16:33:43 IST" name="Submit Order Test" finished-at="2023-01-06T16:34:11 IST" duration-ms="27716">
+      <class name="mavenproject.SubmitOrderTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:mavenproject.SubmitOrderTest@5be49b60]" started-at="2023-01-06T16:33:44 IST" name="launchApplication" finished-at="2023-01-06T16:33:50 IST" duration-ms="5797" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:mavenproject.SubmitOrderTest@5be49b60]" started-at="2023-01-06T16:33:50 IST" name="submitOrder" data-provider="getData" finished-at="2023-01-06T16:33:56 IST" duration-ms="6267" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Singhwar@123, email=sushil@gmail.com, productName=ZARA COAT 3}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:mavenproject.SubmitOrderTest@5be49b60]" started-at="2023-01-06T16:33:56 IST" name="tearDown" finished-at="2023-01-06T16:33:56 IST" duration-ms="229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:mavenproject.SubmitOrderTest@5be49b60]" started-at="2023-01-06T16:33:56 IST" name="launchApplication" finished-at="2023-01-06T16:33:59 IST" duration-ms="3042" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:mavenproject.SubmitOrderTest@5be49b60]" started-at="2023-01-06T16:33:59 IST" name="submitOrder" data-provider="getData" finished-at="2023-01-06T16:34:06 IST" duration-ms="6606" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Sushil@123, email=sushil2@gmail.com, productName=ADIDAS ORIGINAL}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:mavenproject.SubmitOrderTest@5be49b60]" started-at="2023-01-06T16:34:06 IST" name="tearDown" finished-at="2023-01-06T16:34:06 IST" duration-ms="323" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:mavenproject.SubmitOrderTest@5be49b60]" started-at="2023-01-06T16:34:06 IST" name="launchApplication" finished-at="2023-01-06T16:34:10 IST" duration-ms="3810" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="OrderHistoryTest()[pri:0, instance:mavenproject.SubmitOrderTest@5be49b60]" started-at="2023-01-06T16:34:10 IST" name="OrderHistoryTest" finished-at="2023-01-06T16:34:11 IST" depends-on-methods="mavenproject.SubmitOrderTest.submitOrder" duration-ms="946" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderHistoryTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:mavenproject.SubmitOrderTest@5be49b60]" started-at="2023-01-06T16:34:11 IST" name="tearDown" finished-at="2023-01-06T16:34:11 IST" duration-ms="187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- mavenproject.SubmitOrderTest -->
+    </test> <!-- Submit Order Test -->
+  </suite> <!-- Suite -->
+</testng-results>
